@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KUMA Style</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Pagination indicators -->
+    <div class="hero-pagination">
+        <div class="hero-dot active" onclick="goToSlide(0)"></div>
+        <div class="hero-dot" onclick="goToSlide(1)"></div>
+        <div class="hero-dot" onclick="goToSlide(2)"></div>
+        <div class="hero-dot" onclick="goToSlide(3)"></div>
+        <div class="hero-dot" onclick="goToSlide(4)"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">KUMA Style</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Beranda</a> <!-- Ensure this ID exists -->
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Produk
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item nav-link" href="#profile">Profil</a>
+                        <a class="dropdown-item nav-link" href="#services">Layanan</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item nav-link" href="#gallery">Galeri</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Kontak</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div id="home" class="section hero">
+        <div class="hero-background" style="background-image: url(img/bcg.jpg);"></div> <!-- Remove the backslash -->
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Selamat Datang di KUMA Style</h1>
+            <p>Fashion modern untuk semua kalangan.</p>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="profile" class="section about-us"> <!-- ID should match navigation -->
+        <div class="container">
+            <h2 class="about-title">Hai, Kami KUMA</h2>
+            <p class="about-description">
+                KUMA adalah brand fashion Indonesia yang menyediakan pakaian kasual berkualitas tinggi dan trendy dengan style fashion yang modern.
+                Fokus pada anak muda dengan gaya hidup urban, KUMA selalu mengikuti tren terkini dan berkomitmen memberdayakan industri fashion lokal serta menciptakan produk yang mendunia.
+            </p>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services" class="section services">
+        <div class="container">
+            <h2 class="services-title">Layanan Kami</h2>
+            <p class="services-description">
+                Kami menyediakan berbagai layanan untuk memenuhi kebutuhan fashion Anda.
+            </p>
+            <div class="row">
+                <div class="col-md-4 service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <h3>Pakaian Kasual</h3>
+                    <p>Koleksi pakaian kasual yang nyaman dan stylish untuk aktivitas sehari-hari.</p>
+                </div>
+                <div class="col-md-4 service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3>Pengiriman Cepat</h3>
+                    <p>Pengiriman cepat dan aman untuk memastikan pesanan Anda tiba tepat waktu.</p>
+                </div>
+                <div class="col-md-4 service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Customer Service</h3>
+                    <p>Tim customer service kami siap membantu Anda dengan pertanyaan dan kebutuhan Anda.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery Section -->
+    <div id="gallery" class="section gallery">
+        <div class="container">
+            <h2 class="gallery-title">Galeri Kami</h2>
+            <div class="row">
+                <div class="col-md-4 gallery-item mb-3">
+                    <a href="https://www.instagram.com/p/DBq8DuQyT_q/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">
+                        <img src="img/Galeri/Galeri 1.jpg" alt="Produk 1" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <h3>Produk 1</h3>
+                            <p>B'day T-Shirt Raisha JKT48.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 gallery-item mb-3">
+                    <a href="https://www.instagram.com/p/DA1AB1MyCY6/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">
+                        <img src="img/Galeri/Galeri 2.jpg" alt="Produk 2" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <h3>Produk 2</h3>
+                            <p>B'day T-Shirt Lia JKT48.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 gallery-item mb-3">
+                    <a href="https://www.instagram.com/p/C816rNmPqbd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">
+                        <img src="img/Galeri/galeri 3.jpg" alt="Produk 3" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <h3>Produk 3</h3>
+                            <p>B'day T-Shirt Oniel JKT48.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="section contact">
+        <div class="container">
+            <h2 class="contact-title">Kontak Kami</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Hubungi Kami</h3>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nama</label>
+                            <input type="text" class="form-control" id="name" placeholder="Masukkan nama Anda" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Masukkan email Anda" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Pesan</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Tulis pesan Anda di sini" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h3>Informasi Kontak</h3>
+                    <p><strong>Email:</strong> kumaenchant@gmail.com</p>
+                    <p><strong>Telepon:</strong> +62 857-2630-4585</p>
+                    <p><strong>Alamat:</strong> Karangtengah, Kembaran, Banyumas</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 KUMA Style. Semua Hak Dilindungi.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> <!-- Use full version -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script> <!-- Ensure this script is correctly referenced -->
+
+    <!--Button-->
+    <button onclick="scrollToTop()" id="backToTopBtn" title="Kembali ke atas"></button>
+</body>
+</html>

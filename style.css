@@ -1,0 +1,378 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+.navbar {
+    background-color: #f8f9fa; /* Warna latar belakang navbar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan untuk memberi kedalaman */
+}
+
+.navbar-brand {
+    font-weight: bold; /* Mengubah font menjadi tebal */
+}
+
+.nav-link {
+    padding: 15px 20px; /* Menambahkan padding untuk lebih banyak ruang */
+    font-size: 16px; /* Ukuran font */
+}
+
+.hero {
+    position: relative;
+    height: 100vh; /* Tinggi full page */
+    overflow: hidden;
+    display: flex;
+    align-items: center; /* Pusatkan vertikal */
+    justify-content: center; /* Pusatkan horizontal */
+    color: white; /* Warna teks */
+    text-align: center; /* Pusatkan teks */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2; /* Agar konten tampil di atas gambar */
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    transition: transform 1s ease-in-out; /* Transisi untuk efek swipe */
+    z-index: 1; /* Di bawah konten */
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
+}
+
+.hidden {
+    transform: translateX(-100%); /* Geser keluar */
+}
+
+.about-us {
+    padding: 60px 0;
+    background-color: #f8f9fa; /* Warna latar belakang yang lembut */
+    text-align: left; /* Rata kiri untuk teks */
+}
+
+.about-us {
+    padding: 60px 0;
+    background-color: #f8f9fa; /* Warna latar belakang yang lembut */
+    text-align: center; /* Pusatkan teks */
+}
+
+.about-title {
+    font-size: 2.5rem; /* Ukuran font untuk judul */
+    font-weight: bold;
+    margin-bottom: 20px; /* Spasi bawah judul */
+}
+
+.about-description {
+    font-size: 1.2rem; /* Ukuran font untuk deskripsi */
+    line-height: 1.5; /* Tinggi baris untuk kerapatan teks */
+    color: #343a40; /* Warna teks */
+    max-width: 800px; /* Maksimal lebar untuk deskripsi */
+    margin: 0 auto; /* Pusatkan deskripsi */
+    padding: 0 20px; /* Spasi samping */
+}
+
+
+.dropdown-menu {
+    border: none; /* Hilangkan border pada dropdown */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan untuk dropdown */
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1; /* Warna latar belakang saat hover */
+}
+
+.section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.services {
+    position: relative; /* Agar overlay dan gambar latar belakang dapat diatur */
+    height: 100vh; /* Tinggi penuh */
+    display: flex;
+    align-items: center; /* Pusatkan vertikal */
+    justify-content: center; /* Pusatkan horizontal */
+    color: white; /* Warna teks putih */
+    text-align: center; /* Pusatkan teks */
+    overflow: hidden; /* Sembunyikan bagian yang melampaui */
+}
+
+.overlay {
+    position: absolute; /* Agar overlay menutupi seluruh bagian */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Efek transparansi hitam */
+    z-index: 1; /* Pastikan overlay di bawah konten */
+}
+
+.services-title {
+    font-size: 2.5rem; /* Ukuran font untuk judul */
+    font-weight: bold;
+    margin-bottom: 20px; /* Spasi bawah judul */
+    z-index: 2; /* Pastikan judul di atas overlay */
+}
+
+.services-description {
+    font-size: 1.2rem; /* Ukuran font untuk deskripsi */
+    line-height: 1.5; /* Tinggi baris untuk kerapatan teks */
+    max-width: 800px; /* Maksimal lebar untuk deskripsi */
+    margin: 0 auto; /* Pusatkan deskripsi */
+    padding: 0 20px; /* Spasi samping */
+    z-index: 2; /* Pastikan deskripsi di atas overlay */
+}
+
+.service-item {
+    margin-bottom: 30px; /* Spasi bawah untuk setiap item layanan */
+    padding: 20px; /* Spasi dalam setiap item */
+    transition: transform 0.3s; /* Efek transisi saat hover */
+    z-index: 2; /* Pastikan item layanan di atas overlay */
+}
+
+.service-item:hover {
+    transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+.service-icon {
+    font-size: 3rem; /* Ukuran ikon */
+    color: #ffc107; /* Warna ikon */
+    margin-bottom: 10px; /* Spasi bawah ikon */
+}
+
+.service-item h3 {
+    font-size: 1.5rem; /* Ukuran font untuk subjudul */
+    margin-bottom: 10px; /* Spasi bawah subjudul */
+}
+
+.service-item p {
+    color: #f8f9fa; /* Warna teks deskripsi */
+    line-height: 1.5; /* Tinggi baris untuk deskripsi */
+}
+
+/* Menambahkan gambar latar belakang */
+.services::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(img/bcg\ 4.jpg) no-repeat center center/cover; /* Ganti dengan gambar yang sesuai */
+    z-index: 0; /* Pastikan gambar di bawah overlay */
+}
+
+.gallery {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.gallery-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.gallery-overlay h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.gallery-overlay p {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.contact {
+    padding: 60px 0;
+    background-color: #f2f2f2; /* Latar belakang abu-abu muda */
+}
+
+.contact-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #343a40; /* Warna teks */
+}
+
+.contact-form {
+    background-color: white; /* Latar belakang putih untuk formulir */
+    padding: 30px;
+    border-radius: 10px; /* Sudut bulat */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+}
+
+.contact-form .form-control {
+    border-radius: 5px; /* Sudut bulat pada input */
+}
+
+.contact-form .btn {
+    margin-top: 10px; /* Spasi atas tombol */
+}
+
+.map {
+    height: 300px; /* Tinggi peta */
+    margin-top: 20px; /* Spasi atas peta */
+    border-radius: 10px; /* Sudut bulat */
+    overflow: hidden; /* Sembunyikan bagian yang melampaui */
+}
+
+/* Back to Top Button */
+#backToTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #4c4b4b;
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+#backToTopBtn:hover {
+    background-color: #9c8181;
+}
+
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Responsive layout untuk tablet dan smartphone */
+@media (max-width: 768px) {
+    /* Navbar */
+    .navbar-nav {
+        text-align: center;
+        width: 100%;
+    }
+    .navbar-nav .nav-item {
+        margin: 10px 0;
+    }
+    
+    /* Hero Section */
+    .hero {
+        height: 60vh; /* Sesuaikan tinggi untuk layar kecil */
+    }
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    /* About Section */
+    .about-title {
+        font-size: 2rem;
+    }
+    .about-description {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    /* Services Section */
+    .services-title, .contact-title, .gallery-title {
+        font-size: 2rem;
+    }
+    .service-item h3 {
+        font-size: 1.3rem;
+    }
+    .service-item p {
+        font-size: 0.9rem;
+    }
+
+    /* Gallery Section */
+    .gallery-item {
+        margin-bottom: 20px;
+    }
+
+    /* Contact Form */
+    .contact-form {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Navbar - Hide brand text on extra-small screens */
+    .navbar-brand {
+        display: none;
+    }
+    
+    /* Hero Content */
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    /* Gallery Section */
+    .gallery-item img {
+        width: 100%;
+        height: auto;
+    }
+}
