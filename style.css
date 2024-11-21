@@ -18,6 +18,31 @@ body {
     font-size: 16px; /* Ukuran font */
 }
 
+/* Styling for Login Button */
+.login-btn {
+    color: #ffc107;
+    border-color: #ffc107;
+    padding: 0.375rem 0.75rem;
+    transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Navbar padding and alignment for consistent centering */
+.navbar-nav .nav-item {
+    display: flex;
+    align-items: center;
+}
+
+/* Additional styling for better visibility */
+.navbar {
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 .hero {
     position: relative;
     height: 100vh; /* Tinggi full page */
@@ -275,6 +300,18 @@ body {
     overflow: hidden; /* Sembunyikan bagian yang melampaui */
 }
 
+.contact-form .btn {
+    background-color: #ffc107; /* Warna latar belakang tombol */
+    color: #343a40; /* Warna teks tombol */
+    margin-top: 10px; /* Spasi atas tombol */
+    border: none; /* Hilangkan border tombol */
+    transition: background-color 0.3s ease; /* Transisi warna saat hover */
+}
+
+.contact-form .btn:hover {
+    background-color: #e0a800; /* Warna saat tombol dihover */
+    color: #fff; /* Ubah warna teks saat hover */
+
 /* Back to Top Button */
 #backToTopBtn {
     display: none; /* Hidden by default */
@@ -375,4 +412,5 @@ footer {
         width: 100%;
         height: auto;
     }
+
 }
